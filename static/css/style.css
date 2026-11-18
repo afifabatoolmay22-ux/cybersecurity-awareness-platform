@@ -1,0 +1,83 @@
+/* ---------- Colour theme ---------- */
+:root {
+    --navy: #0a1128;
+    --navy-light: #131c3a;
+    --blue: #00b4ff;
+    --text: #e6ecf5;
+    --muted: #9aa8c2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--navy);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    background: var(--navy-light);
+    padding: 16px 32px;
+    border-bottom: 1px solid rgba(0, 180, 255, 0.3);
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--blue);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    color: var(--blue);
+    margin-bottom: 16px;
+}
+
+.hero p {
+    color: var(--muted);
+    margin-bottom: 12px;
+}
+
+.status {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    text-align: center;
+    padding: 18px;
+    background: var(--navy-light);
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+}
